@@ -1,0 +1,14 @@
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script>
+<div id="oper"></div>
+<div id="vid"></div>
+<script>
+ player = new Clappr.Player({
+ source: "https://m3u9.ml/a2/hls1/sportv2.m3u8?mu3zAQc9HC3GbwJq=Wg31a3bYMgANoPIFG1vx8g&3U1G7qaTxrPbalZnEx=1657611715",
+ mimeType: "application/x-mpegURL",
+ autoPlay: true, 
+ height: "558",
+ width: "100%",
+ plugins: {"core": [LevelSelector]}, 
+ parentId: "#vid"});
+</script>
